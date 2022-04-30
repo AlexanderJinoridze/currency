@@ -1,0 +1,4 @@
+.embed-block {
+    @extend .p-4, .has-background-white-bis, .is-unselectable;
+    min-height: 100vh;
+}

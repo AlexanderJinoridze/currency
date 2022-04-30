@@ -1,0 +1,14 @@
+.converter-box {
+
+    margin-top: -4rem;
+
+    @include from($tablet) {
+        .column {
+            width: calc(((100% - 3rem) / 3) - (#{ $size-7 } * 2));
+        }
+    }
+
+    .converter-box-bottom {
+        min-height: 8rem;
+    }
+}

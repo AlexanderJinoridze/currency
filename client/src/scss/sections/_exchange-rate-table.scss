@@ -1,0 +1,39 @@
+.exchange-rate-table {
+    @extend .my-6;
+
+    .exchange-table-header {
+        @extend .has-background-primary, .is-flex, .mb-2, .is-align-items-center;
+
+        border-radius: .5rem;
+
+        & > * {
+            @extend .p-4;
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+
+        & > span {
+            @extend .has-text-white;
+        }
+    }
+
+    .exchange-table-row {
+        @extend .is-clickable, .has-background-white-bis, .is-flex, .mb-2, .is-align-items-center;
+
+        border-radius: .5rem;
+
+        &:hover {
+            @extend .has-background-link-light;
+        }
+
+        &:last-of-type {
+            @extend .mb-0;
+        }
+
+        & > * {
+            @extend .p-4;
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+    }
+}

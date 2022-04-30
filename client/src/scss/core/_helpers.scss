@@ -1,0 +1,31 @@
+.is-text-overflow {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.section-container {
+    @include until($desktop) {
+        & {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-one-third {
+    width: 33.333333%;
+}
+
+.h-one-third {
+    height: 33.333333%;
+}

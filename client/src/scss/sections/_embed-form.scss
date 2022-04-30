@@ -1,0 +1,23 @@
+.embed-form {
+    .currency-list {
+        @extend
+            .columns,
+            .is-multiline,
+            .is-centered;
+        
+        margin: -.25rem;
+
+        .currency-list-item {
+            @extend
+                .column,
+                .is-flex,
+                .is-align-content-center,
+                .is-full-mobile,
+                .is-half-tablet,
+                .is-one-third-desktop;
+
+            height: 4rem;
+            padding: .25rem;
+        }
+    }
+}

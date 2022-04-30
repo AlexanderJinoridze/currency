@@ -1,0 +1,37 @@
+$icons-font: "icons";
+
+@font-face {
+    font-family: $icons-font;
+    src: url("../../fonts/icons.eot?4d102ee1388140774003ff85cbc19f30#iefix") format("embedded-opentype"),
+url("../../fonts/icons.svg?4d102ee1388140774003ff85cbc19f30#icons") format("svg"),
+url("../../fonts/icons.ttf?4d102ee1388140774003ff85cbc19f30") format("truetype"),
+url("../../fonts/icons.woff2?4d102ee1388140774003ff85cbc19f30") format("woff2"),
+url("../../fonts/icons.woff?4d102ee1388140774003ff85cbc19f30") format("woff");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$icons-map: (
+    "angle-down": "\f101",
+    "switch": "\f102",
+    "x": "\f103",
+);
+
+.icon-angle-down:before {
+    content: map-get($icons-map, "angle-down");
+}
+.icon-switch:before {
+    content: map-get($icons-map, "switch");
+}
+.icon-x:before {
+    content: map-get($icons-map, "x");
+}

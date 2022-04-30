@@ -1,0 +1,57 @@
+$icons-font: "icons";
+
+@font-face {
+    font-family: $icons-font;
+    src: url("../fonts/icons.eot?2b76447d444bf1fc13e8b9d93c63c910#iefix") format("embedded-opentype"),
+url("../fonts/icons.svg?2b76447d444bf1fc13e8b9d93c63c910#icons") format("svg"),
+url("../fonts/icons.ttf?2b76447d444bf1fc13e8b9d93c63c910") format("truetype"),
+url("../fonts/icons.woff2?2b76447d444bf1fc13e8b9d93c63c910") format("woff2"),
+url("../fonts/icons.woff?2b76447d444bf1fc13e8b9d93c63c910") format("woff");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$icons-map: (
+    "check": "\f101",
+    "day": "\f102",
+    "eye-slash": "\f103",
+    "eye": "\f104",
+    "lightbulb": "\f105",
+    "logout": "\f106",
+    "night": "\f107",
+    "trash": "\f108",
+);
+
+.icon-check:before {
+    content: map-get($icons-map, "check");
+}
+.icon-day:before {
+    content: map-get($icons-map, "day");
+}
+.icon-eye-slash:before {
+    content: map-get($icons-map, "eye-slash");
+}
+.icon-eye:before {
+    content: map-get($icons-map, "eye");
+}
+.icon-lightbulb:before {
+    content: map-get($icons-map, "lightbulb");
+}
+.icon-logout:before {
+    content: map-get($icons-map, "logout");
+}
+.icon-night:before {
+    content: map-get($icons-map, "night");
+}
+.icon-trash:before {
+    content: map-get($icons-map, "trash");
+}
