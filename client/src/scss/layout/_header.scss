@@ -1,0 +1,7 @@
+header {
+    @extend .p-4, .has-background-link-dark;
+
+    .logo {
+        height: 3rem;
+    }
+}

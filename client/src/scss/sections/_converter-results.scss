@@ -1,0 +1,13 @@
+.currency-converter-result {
+    @extend .mb-5;
+
+    .amount-title {
+        @extend .title, .is-6, .mb-1;
+
+        color: $grey;
+    }
+
+    .result-title {
+        @extend .title, .is-3;
+    }
+}

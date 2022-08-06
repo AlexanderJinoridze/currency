@@ -1,0 +1,7 @@
+.selected-unit-rates {
+    color: $grey;
+
+    *:not(:last-of-type) {
+        @extend .mb-1;
+    }
+}
